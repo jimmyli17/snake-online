@@ -34,10 +34,7 @@ function step(t1){
             document.querySelector('.bg-modal').style.display = 'flex';
             document.querySelector('.close').addEventListener('click', function(){
                 document.querySelector('.bg-modal').style.display = 'none';
-            });
-            document.getElementById('close').addEventListener('click', function(){
-                window.close();
-            });   
+            }); 
         }
         else {
             if (t2-t1 > 100) {
