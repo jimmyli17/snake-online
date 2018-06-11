@@ -14,7 +14,8 @@ const initialState = {
     moves: [EAST], //array of moves (a.k.a. directions)
     snake: [{x: 2, y: 2}], //array of points where the snake is
     apple: randomPosition(), //point where apple is
-    gameOver: false //boolean whether game is over or not
+    gameOver: false, //boolean whether game is over or not
+    score: 0
 }
 
 /*  Next Moves (a function)
@@ -141,6 +142,19 @@ function nextApple(state){
     }
 }
 
+/*  Add one to the score if willEat is true (a function)
+    Params: a state
+    Returns: an integer
+*/
+function nextScore(state){
+    if (willEat(state)){
+        return (state.score + 1);
+    }
+    else {
+        return state.score;
+    }
+}
+
 /*  Next State (a function)
     Params: a state 
     Returns: a new state
@@ -149,7 +163,8 @@ function nextState(state){
     let newState = {
         moves: nextMoves(state),
         snake: nextSnake(state),
-        apple: nextApple(state)
+        apple: nextApple(state),
+        score: nextScore(state)
     };
     return newState;
 }
