@@ -26,6 +26,11 @@ function draw() {
     ctx.fillStyle = '#FF3D3D';
     let apple = currentState.apple;
     ctx.fillRect(pixelsX(apple.x), pixelsY(apple.y), pixelsX(1), pixelsY(1));
+    //Score
+    ctx.font = "16px Arial";
+    ctx.fillStyle = "#1686d9";
+    ctx.fillText("Score: "+currentState.score, 8, 20);
+
 }
 
 function step(t1){
