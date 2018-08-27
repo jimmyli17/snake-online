@@ -14,3 +14,7 @@ Controls:
 Objective:
 
 You are a snake. Collect apples to grow longer and to increase your score; however be careful not to crash into yourself!
+
+To play:
+
+Click on the link next to the title of this repo.
