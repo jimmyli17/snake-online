@@ -17,4 +17,4 @@ You are a snake. Collect apples to grow longer and to increase your score; howev
 
 To play:
 
-Click on the link next to the title of this repo.
+Click on the link next to the description of this repo. (https://jimmyli17.github.io/snake-online/)
